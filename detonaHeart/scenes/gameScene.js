@@ -183,7 +183,7 @@ class gameScene extends Phaser.Scene {
             // Cria nova bomba ao recolher todos os corações
             let x = (this.vanellope.x < 400) ? Phaser.Math.Between(400, 800) : Phaser.Math.Between(0, 400);
             let Bomb = this.billBomb.create(x, 16, 'billBomb');
-            Bomb.setBounce(1.1); // Faz bomba quicar
+            Bomb.setBounce(0.9); // Faz bomba quicar
             Bomb.setCollideWorldBounds(true); // Impede que saia da tela
             Bomb.setVelocity(Phaser.Math.Between(-200, 200), 20); // Define velocidade
             Bomb.allowGravity = false; // Desativa gravidade
